@@ -8,7 +8,7 @@
 
 
 
-![QQ截图20200216144514](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144514.jpg)
+![QQ截图20200216144514](https://github.com/szj-github/-/blob/master/picture/1.jpg)
 
 
 
