@@ -8,23 +8,17 @@
 
 
 
-![QQ截图20200216144514](https://github.com/szj-github/-/blob/master/picture/1.jpg)
+![1](https://github.com/szj-github/-/blob/master/picture/1.jpg)
 
 
 
-![QQ截图20200216144734](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144734.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/2.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/3.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/4.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/5.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/6.jpg)
+![QQ截图20200216144734](https://github.com/szj-github/-/blob/master/picture/7.jpg)
 
-![QQ截图20200216144744](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144744.jpg)
-
-![QQ截图20200216144754](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144754.jpg)
-
-![QQ截图20200216144804](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144804.jpg)
-
-![QQ截图20200216144856](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144856.jpg)
-
-![QQ截图20200216144936](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144936.jpg)
-
-![QQ截图20200216144945](D:\图片\互联网城市分析系统项目展示\QQ截图20200216144945.jpg)
 
 ## 技术介绍
 
