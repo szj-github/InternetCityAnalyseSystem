@@ -1,0 +1,121 @@
+{% extends "bootstrap/base.html" %}
+{% block head %}
+    {{ super() }}
+    <style>
+    .top-div{
+        {#background: linear-gradient(to left,#c3ff90,#73A6FF, #ffcb92);#}
+        background: rgb(106, 96, 183);
+        width: 100%;
+        height: 40px;
+    }
+    body{
+        background: rgb(238,245,249);
+
+    }
+    .navbar{
+        background: #a7dcff;
+
+    }
+    </style>
+    {% block title %}
+
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    <script>
+    function search() {
+        $('#1').show();
+
+    }
+    </script>
+
+
+<br><br><br><br>
+    <div class="container text-center">
+    <div class="row">
+        <h5><p class="text-left">输入检索信息</p></h5>
+        <div class="col-xs-9">
+            <form method="post" class="text-center">
+
+                <div class="text-center">
+                    <label style="margin-left: -70px;">申请职位&nbsp&nbsp&nbsp<input name="position" class=" text-center" style="height: 40px;width: 320px" value="" placeholder="职位搜索"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp
+                    <label> 期望月薪&nbsp&nbsp&nbsp<input name="money" class=" text-center"  style="height: 40px;width: 320px" value="" placeholder="单位K/月"></label><br><br>
+                    <label class="" style="margin-left: -70px;">公司待遇&nbsp&nbsp&nbsp<input class=" text-center" name="daiyu" value="" style="height: 40px;width: 320px" placeholder="五险一金... ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp
+                        <label class="">工作年限&nbsp&nbsp&nbsp<input class=" text-center" name="jingyan" style="height: 40px;width: 320px" value="" placeholder="单位为年">
+                </div>
+                <br>
+<div>
+                <label class="" style="margin-left: -300px;"> 公司性质&nbsp&nbsp&nbsp</label><select style="width: 200px;height: 30px;" name="xingzhi">
+                    <option value="上市公司">上市公司</option>
+                    <option value="民营公司">民营公司</option>
+                </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                                <label class="">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最高学历</label><select name="xueli" style="width: 200px;height: 30px;left:">
+                    <option value="初中及以下">初中及以下</option>
+                    <option value="中专">中专</option>
+                <option value="中技">中技</option>
+                    <option value="高中">高中</option>
+                 <option value="大专">大专</option>
+                    <option value="本科">本科</option>
+                 <option value="硕士">硕士</option>
+                    <option value="博士">博士</option>
+                </select><br>
+                <br>
+    </div>
+
+
+            <button class="btn btn-warning text-center" style="margin-left: 900px;margin-top: -190px" href="{{ url_for('index',page = 1) }}" onclick="search">职位搜索</button><img src="{{ url_for('static',filename='search.gif') }}" id ='1' hidden>
+
+
+            </form>
+        </div>
+
+    </div>
+    </div>
+<hr style="height:4px;border:none;border-top:1px solid #73A6FF;" />    <div class="container" style="margin-left: 50px;width: 95%">
+    <div class="row">
+
+        <div class="col-xs-12 text-center">
+            <table class="table table-striped">
+    <caption></caption>
+        <thead>
+        <tr class="text-center">
+            <th>职位</th>
+            <th>公司名</th>
+            <th>工作地点</th>
+            <th>城市情况</th>
+            <th>薪资</th>
+            <th>职位要求</th>
+            <th>公司待遇</th>
+            <th>工作年限</th>
+            <th>公司详情</th>
+        </tr>
+        </thead>
+        {% for i in info %}
+
+    <tbody>
+    <tr>
+        <th>{{i[0]}}</th>
+        <th> {{i[2]|truncate(10,True)}}</th>
+        <th>{{i[1]}}</th>
+        <th><button style="width: 100%"><a href="/map/{{ i[1] }}">气候</a></button>
+        <button style="width: 100%"><a href="/fangjia/{{ i[1] }}">房价</a></button></th>
+        <th>{{i[3]}}</th>
+        <th>{{i[4]|truncate(60,True)}}</th>
+        <th>{{i[5]|truncate(10,True)}}</th>
+        <th>{{i[6]}}</th>
+        <th><a href="{{ i[11] }}"><button class="btn btn-warning">公司详情</button> </a> </th>
+    </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+        </div>
+
+    </div>
+    </div>
+    <div class="text-center">
+
+<a href="/{{ page|reducepage }}"><button class="btn btn-success">上一页</button></a>
+    <a href="/{{ page|addpage }}"><button class="btn btn-success">下一页</button></a>
+    </div>
+{% endblock %}

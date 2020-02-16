@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/infographic.js"></script>
+
+</head>
+<body>
+    <div id="0b5266c83f624eb886d8e0ce834b451d" class="chart-container" style="width:500px; height:500px;"></div>
+    <script>
+        var chart_0b5266c83f624eb886d8e0ce834b451d = echarts.init(
+            document.getElementById('0b5266c83f624eb886d8e0ce834b451d'), 'infographic', {renderer: 'canvas'});
+        var option_0b5266c83f624eb886d8e0ce834b451d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "radar",
+            "name": "\u8ba1\u7b97\u673a\u9886\u57df",
+            "data": [
+                [
+                    6.09,
+                    6.03,
+                    10.01,
+                    15.4,
+                    22.08,
+                    26.8,
+                    29.39
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u8ba1\u7b97\u673a\u9886\u57df"
+            ],
+            "selected": {
+                "\u8ba1\u7b97\u673a\u9886\u57df": true
+            },
+            "show": true,
+            "left": "2%",
+            "top": "18%"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "radar": {
+        "indicator": [
+            {
+                "name": "\u65e0\u5de5\u4f5c\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "1\u5e74\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "2\u5e74\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "3-4\u5e74\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "5-7\u5e74\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "8-9\u5e74\u7ecf\u9a8c",
+                "max": 30
+            },
+            {
+                "name": "10\u5e74\u4ee5\u4e0a\u7ecf\u9a8c",
+                "max": 30
+            }
+        ],
+        "name": {
+            "textStyle": {}
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "splitArea": {
+            "show": true,
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        "axisLine": {
+            "show": true,
+            "onZero": true,
+            "onZeroAxisIndex": 0
+        }
+    },
+    "title": [
+        {
+            "text": "\u5de5\u4f5c\u7ecf\u9a8c\u4e0e\u85aa\u8d44\u5173\u7cfb",
+            "subtext": "\u6570\u636e\u6765\u81ea\u524d\u7a0b\u65e0\u5fe7",
+            "left": "15%"
+        }
+    ]
+};
+        chart_0b5266c83f624eb886d8e0ce834b451d.setOption(option_0b5266c83f624eb886d8e0ce834b451d);
+    </script>
+</body>
+</html>
